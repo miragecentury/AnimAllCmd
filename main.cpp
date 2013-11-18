@@ -27,7 +27,7 @@ int main(int argc, char** argv) {
     Animall::Tool::Cmd* cmd;
     cmd = new Animall::Tool::Cmd(argc, argv);
     delete cmd;
-//    Animall::Tool::Api::Balance::updateWeight(std::string("*"), std::string("*"), 564.5, 4565456);
+    //    Animall::Tool::Api::Balance::updateWeight(std::string("http://guardgamelle.local"), std::string("7e5516bd-bc3b-4e16-bcb1-f83159a1993b"), 5564.5, 4565456);
     return 0;
 }
 

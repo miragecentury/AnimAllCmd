@@ -18,6 +18,6 @@ void Balance::updateWeight(std::string urlBase, std::string uuid, float weight, 
     stimestamp = os->str();
     delete os;
 
-    exec = cmd + urlBase + url + " --data {'id':'" + uuid + "','date':'" + stimestamp + "','state':'" + sweight + "'}";
+    exec = cmd + urlBase + url + " --data \"{'id':'" + uuid + "','date':'" + stimestamp + "','state':'" + sweight + "'}\"";
     std::cout << exec << std::endl;
 }
