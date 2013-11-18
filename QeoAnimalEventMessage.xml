@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<types xmlns="http://www.qeo.org/formal/2013/Qeo_Data_Model" version="0.1">
+    <module name="qeo::animall::gamelle">
+        <struct name="NewWeight" behavior="event">
+            <doc>Change de poid de la gamelle</doc>  
+            <member name="from" type="string"> 
+                <doc>uuid de la gamelle.</doc>
+            </member>
+            <member name="weight" type="float32"> 
+                <doc>the new poids</doc>
+            </member>
+            <member name="timestamp" type="int32">
+                <doc>timestamp</doc>
+            </member>               
+        </struct>
+    </module>
+    <module name="qeo::animall::balance">
+        <struct name="NewWeight" behavior="event">
+            <doc>Change de poid de la gamelle</doc>  
+            <member name="from" type="string"> 
+                <doc>uuid de la gamelle.</doc>
+            </member>
+            <member name="weight" type="float32"> 
+                <doc>the new poids</doc>
+            </member>
+            <member name="timestamp" type="int32">
+                <doc>timestamp</doc>
+            </member>               
+        </struct>
+    </module>
+</types> 
+
+
+
