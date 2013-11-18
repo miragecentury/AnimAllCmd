@@ -11,6 +11,7 @@
 #include "AnimallObjectBalance.hpp"
 
 extern "C" {
+#include <unistd.h>
 #include "QeoAnimalEventMessage.h"
 #include <qeo/api.h>
 }
