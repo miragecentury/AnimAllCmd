@@ -26,7 +26,7 @@ bool Balance::publishNewWeight() {
     if (this->qeo != NULL) {
         this->msg_writer = qeo_factory_create_event_writer(qeo, qeo_animall_balance_NewWeight_type, NULL, 0);
         if (this->msg_writer != NULL) {
-            retC = qeo_event_writer_write(this->msg_writer, this->msg);
+            sleep(2);
             retC = qeo_event_writer_write(this->msg_writer, this->msg);
             if (retC == QEO_OK) {
                 std::cout << "OK" << std::endl;

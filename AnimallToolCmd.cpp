@@ -82,6 +82,9 @@ void Cmd::BalenceWeightUpdateCmd(int argc, char** argv) {
                     this->BalanceWeightupdateHelp();
                 }
             }
+        } else {
+            std::cout << "Trop peu d'argument ou incohérent" << std::endl;
+            this->BalanceWeightupdateHelp();
         }
     } else {
         std::cout << "Trop peu d'arguments" << std::endl;
@@ -129,6 +132,9 @@ void Cmd::GamelleWeightUpdateCmd(int argc, char** argv) {
                     this->GamelleWeightupdateHelp();
                 }
             }
+        } else {
+            std::cout << "Trop peu d'argument ou incohérent" << std::endl;
+            this->GamelleWeightupdateHelp();
         }
     } else {
         std::cout << "Trop peu d'arguments" << std::endl;
@@ -193,6 +199,7 @@ void Cmd::LoggerCmd(int argc, char** argv) {
 void Cmd::Logger(std::string scope, std::string s_scope) {
     Animall::Tool::Qeo::Logger* logger = new Animall::Tool::Qeo::Logger();
     if (!scope.compare("all")) {
+        std::cout << "All Log :" << std::endl;
         logger->addAll();
     }
     if (!scope.compare("Gamelle")) {

@@ -9,11 +9,12 @@
 #include <time.h>       //récupére les fonctions times (héritée du c inchangé)
 #include <cstdlib>      //récupére les fonctions c de la stdlib importé pour le c++
 #include <iostream>
-
 // Projet
 #include "AnimallObjectGamelle.hpp"
 
 extern "C" {
+    //Lib std
+#include <unistd.h>
     //QEO
 #include <qeo/api.h>
 #include <qeo/error.h>

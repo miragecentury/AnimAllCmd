@@ -6,6 +6,7 @@ Logger::Logger() {
     this->err = false;
     this->qeo = qeo_factory_create();
     if (this->qeo == NULL) {
+        std::cout << "QEO FACTORYCREATE == NULL" << std::endl;
         this->err = true;
     }
 
@@ -46,8 +47,8 @@ static void QeoBalanceWeightUpdateFct(const qeo_event_reader_t *reader, const vo
     qeo_animall_balance_NewWeight_t* msg = (qeo_animall_balance_NewWeight_t*) data;
     std::cout << "*****" << std::endl;
     std::cout << "*\t" << "BalanceWeightUpdate:" << std::endl;
-    std::cout << "*\t\t" << "uuid:" << "\t" << msg->uuid << std::endl;
-    std::cout << "*\t\t" << "weight:" << "\t" << msg->weight << std::endl;
+    std::cout << "*\t\t" << "uuid:" << "\t\t" << msg->uuid << std::endl;
+    std::cout << "*\t\t" << "weight:" << "\t\t" << msg->weight << std::endl;
     std::cout << "*\t\t" << "timestamp:" << "\t" << msg->timestamp << std::endl;
     std::cout << "*****" << std::endl;
 }
@@ -65,6 +66,7 @@ bool Logger::addBalanceWeightUpdate() {
             std::cout << "BalanceWeightUpdateER == NULL" << std::endl;
             this->err = true;
         }
+        std::cout << "BalanceWeightUpdateER:Ok" << std::endl;
     }
 }
 
@@ -73,8 +75,8 @@ static void QeoGamelleWeightUpdateFct(const qeo_event_reader_t *reader, const vo
     qeo_animall_gamelle_NewWeight_t* msg = (qeo_animall_gamelle_NewWeight_t*) data;
     std::cout << "*****" << std::endl;
     std::cout << "*\t" << "GamelleWeightUpdate:" << std::endl;
-    std::cout << "*\t\t" << "uuid:" << "\t" << msg->uuid << std::endl;
-    std::cout << "*\t\t" << "weight:" << "\t" << msg->weight << std::endl;
+    std::cout << "*\t\t" << "uuid:" << "\t\t" << msg->uuid << std::endl;
+    std::cout << "*\t\t" << "weight:" << "\t\t" << msg->weight << std::endl;
     std::cout << "*\t\t" << "timestamp:" << "\t" << msg->timestamp << std::endl;
     std::cout << "*****" << std::endl;
 }
@@ -92,6 +94,7 @@ bool Logger::addGamelleWeightUpdate() {
             std::cout << "GamelleWeightUpdateER == NULL" << std::endl;
             this->err = true;
         }
+        std::cout << "GamelleWeightUpdateER:Ok" << std::endl;
     }
 }
 
