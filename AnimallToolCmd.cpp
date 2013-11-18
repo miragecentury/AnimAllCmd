@@ -6,6 +6,7 @@
 #include "AnimallObjectBalance.hpp"
 #include "AnimallToolQeoGamelle.hpp"
 #include "AnimallToolQeoBalance.hpp"
+#include "AnimallToolQeoLogger.hpp"
 
 using namespace Animall::Tool;
 
@@ -26,6 +27,7 @@ void Cmd::dispatchCmd(int argc, char** argv) {
     std::string cmdHelp = "help";
     std::string cmdBalenceWeightUpdate = "BalanceUpdate";
     std::string cmdGamelleWeightUpdate = "GamelleUpdate";
+    std::string cmdLogger = "Logger";
     bool exec = false;
     if (exec == false && !cmdHelp.compare(argv[1])) {
         this->printHelp();
@@ -37,6 +39,10 @@ void Cmd::dispatchCmd(int argc, char** argv) {
     }
     if (exec == false && !cmdGamelleWeightUpdate.compare(argv[1])) {
         this->GamelleWeightUpdateCmd(argc, argv);
+        exec = true;
+    }
+    if (exec == false && !cmdLogger.compare(argv[1])) {
+        this->LoggerCmd(argc, argv);
         exec = true;
     }
 
@@ -53,6 +59,7 @@ void Cmd::printHelp() {
     std::cout << "Liste des Commandes:" << std::endl;
     std::cout << "\t" << "BalanceUpdate" << " args... : " << "Mise à jour du poid pour une balance" << std::endl;
     std::cout << "\t" << "GamelleUpdate" << " args... : " << "Mise à jour du poid pour une gamelle" << std::endl;
+    std::cout << "\t" << "Logger" << " args... : " << "Log sur la sortie standart des events" << std::endl;
 }
 
 void Cmd::BalenceWeightUpdateCmd(int argc, char** argv) {
@@ -147,4 +154,61 @@ void Cmd::GamelleWeightupdateHelp() {
     std::cout << "\tGamelleUpdate" << " " << "uuid newweight" << " : " << "affiche cette aide" << std::endl;
     std::cout << "\t\t - " << "uuid" << "\t\t: " << "identifiant unique de l'appareil" << "\texemple: " << "qjjdkqsd-456q4sd-546546" << std::endl;
     std::cout << "\t\t - " << "newweight" << "\t: " << "nouveau poids de l'animal en g" << "\texemple: " << "11542.56" << std::endl;
+}
+
+void Cmd::LoggerCmd(int argc, char** argv) {
+    std::string cmdHelp = "help";
+    std::string cmdAll = "all";
+    std::string cmdGamelle = "Gamelle";
+    std::string cmdBalance = "Balance";
+    bool exec = false;
+    if (argc >= 2) {
+        if (argc >= 3) {
+            if (!cmdHelp.compare(argv[2])) {
+                this->LoggerHelp();
+                exec = true;
+            }
+            if (!cmdAll.compare(argv[2])) {
+                this->Logger(cmdAll, "");
+                exec = true;
+            }
+            if (!cmdGamelle.compare(argv[2])) {
+                this->Logger(cmdGamelle, "");
+                exec = true;
+            }
+            if (!cmdBalance.compare(argv[2])) {
+                this->Logger(cmdBalance, "");
+                exec = true;
+            }
+            if (exec == false) {
+                std::cout << "Logger Aucun Scope ne correspond" << std::endl;
+            }
+        }
+    } else {
+        std::cout << "Trop peu d'arguments" << std::endl;
+        this->LoggerHelp();
+    }
+}
+
+void Cmd::Logger(std::string scope, std::string s_scope) {
+    Animall::Tool::Qeo::Logger* logger = new Animall::Tool::Qeo::Logger();
+    if (!scope.compare("all")) {
+        logger->addAll();
+    }
+    if (!scope.compare("Gamelle")) {
+        logger->addBalance();
+    }
+    if (!scope.compare("Balance")) {
+        logger->addGamelle();
+    }
+    logger->waitExit();
+    delete logger;
+}
+
+void Cmd::LoggerHelp() {
+    std::cout << "Logger :Aide:" << std::endl;
+    std::cout << "Arguments possible" << std::endl;
+    std::cout << "\tLogger" << " " << "help" << " : " << "affiche cette aide" << std::endl;
+    std::cout << "\tLogger" << " " << "scope [sous_scope]" << " : " << "Log les events dans le scope" << std::endl;
+    std::cout << "\t\t - " << "scope" << "\t\t: " << "" << "\texemple: " << "all|Gamelle|Balance" << std::endl;
 }

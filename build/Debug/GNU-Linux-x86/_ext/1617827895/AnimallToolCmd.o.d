@@ -13,7 +13,8 @@ build/Debug/GNU-Linux-x86/_ext/1617827895/AnimallToolCmd.o: \
  /home/zeus/Documents/QeoSDK-0.15.0/c/include/dds/dds_seq.h \
  /home/zeus/Documents/QeoSDK-0.15.0/c/include/dds/dds_error.h \
  /home/zeus/NetBeansProjects/SenderAnimallCmd/QeoAnimalEventMessage.h \
- /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBalance.hpp
+ /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBalance.hpp \
+ /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoLogger.hpp
 
 /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolCmd.hpp:
 
@@ -42,3 +43,5 @@ build/Debug/GNU-Linux-x86/_ext/1617827895/AnimallToolCmd.o: \
 /home/zeus/NetBeansProjects/SenderAnimallCmd/QeoAnimalEventMessage.h:
 
 /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBalance.hpp:
+
+/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoLogger.hpp:

@@ -15,7 +15,7 @@ typedef struct {
     /**
      * uuid de la gamelle.
      */
-    char * from;
+    char * uuid;
     /**
      * the new poids
      */
@@ -34,7 +34,7 @@ typedef struct {
     /**
      * uuid de la gamelle.
      */
-    char * from;
+    char * uuid;
     /**
      * the new poids
      */

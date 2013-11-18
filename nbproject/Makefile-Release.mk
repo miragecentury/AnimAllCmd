@@ -40,6 +40,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/_ext/1617827895/AnimallToolCmd.o \
 	${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBalance.o \
 	${OBJECTDIR}/_ext/1617827895/AnimallToolQeoGamelle.o \
+	${OBJECTDIR}/_ext/1617827895/AnimallToolQeoLogger.o \
 	${OBJECTDIR}/_ext/1617827895/QeoAnimalEventMessage.o \
 	${OBJECTDIR}/main.o
 
@@ -92,6 +93,11 @@ ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoGamelle.o: /home/zeus/NetBeansProject
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
 	${RM} $@.d
 	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoGamelle.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoGamelle.cpp
+
+${OBJECTDIR}/_ext/1617827895/AnimallToolQeoLogger.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoLogger.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
+	${RM} $@.d
+	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoLogger.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoLogger.cpp
 
 ${OBJECTDIR}/_ext/1617827895/QeoAnimalEventMessage.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/QeoAnimalEventMessage.c 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895

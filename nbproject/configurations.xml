@@ -10,9 +10,12 @@
           <itemPath>/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectGamelle.hpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f1" displayName="Tool" projectFiles="true">
+          <logicalFolder name="f2" displayName="Api" projectFiles="true">
+          </logicalFolder>
           <logicalFolder name="f1" displayName="Qeo" projectFiles="true">
             <itemPath>/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBalance.hpp</itemPath>
             <itemPath>/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoGamelle.hpp</itemPath>
+            <itemPath>/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoLogger.hpp</itemPath>
             <itemPath>/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoSimpleSender.hpp</itemPath>
           </logicalFolder>
           <itemPath>/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolCmd.hpp</itemPath>
@@ -34,9 +37,12 @@
           <itemPath>/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectGamelle.cpp</itemPath>
         </logicalFolder>
         <logicalFolder name="f1" displayName="Tool" projectFiles="true">
+          <logicalFolder name="f2" displayName="Api" projectFiles="true">
+          </logicalFolder>
           <logicalFolder name="f1" displayName="Qeo" projectFiles="true">
             <itemPath>/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBalance.cpp</itemPath>
             <itemPath>/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoGamelle.cpp</itemPath>
+            <itemPath>/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoLogger.cpp</itemPath>
           </logicalFolder>
           <itemPath>/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolCmd.cpp</itemPath>
         </logicalFolder>
@@ -165,6 +171,16 @@
             tool="3"
             flavor2="0">
       </item>
+      <item path="/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoLogger.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoLogger.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
       <item path="/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoSimpleSender.hpp"
             ex="false"
             tool="3"
@@ -254,6 +270,16 @@
             flavor2="0">
       </item>
       <item path="/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoGamelle.hpp"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoLogger.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoLogger.hpp"
             ex="false"
             tool="3"
             flavor2="0">

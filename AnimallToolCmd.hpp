@@ -15,15 +15,20 @@
 namespace Animall {
     namespace Tool {
 
+        //J'aurais pu faire une class compléte d'élément statique mais au cas où.
+
         class Cmd {
         public:
             Cmd(int argc, char** argv);
             ~Cmd();
         private:
             /**/
+
             void dispatchCmd(int argc, char** argv);
             void printHelp();
+
             /**/
+
             /**
              * Commande permettante de mettre à jour le poid d'une gamelle
              * @param uuid      identifiant de l'objet
@@ -41,6 +46,9 @@ namespace Animall {
              * Affiche l'aide de la commande
              */
             void GamelleWeightupdateHelp();
+
+            /**/
+
             /**
              * Commande permettante de mettre à jour le poid d'une balance
              * @param uuid      identifiant de l'objet
@@ -58,6 +66,32 @@ namespace Animall {
              * Affiche l'aide de la commande
              */
             void BalanceWeightupdateHelp();
+
+            /**/
+
+            void LoggerCmd(int argc, char** argv);
+
+            void Logger(std::string scope, std::string s_scope);
+
+            void LoggerHelp();
+
+            /**/
+
+            void GamelleRemplieCmd(int argc, char** argv);
+
+            void GamelleRemplie(std::string uuid, float diff, float newweight);
+
+            void GamelleremplieHelp();
+
+            /**/
+
+            void GamelleMangerCmd(int argc, char** argv);
+
+            void GamelleManger(std::string uuid, float diff, float newweight);
+
+            void GamelleMangerHelp();
+
+            /**/
         };
     }
 }

@@ -3,7 +3,7 @@
     <module name="qeo::animall::gamelle">
         <struct name="NewWeight" behavior="event">
             <doc>Change de poid de la gamelle</doc>  
-            <member name="from" type="string"> 
+            <member name="uuid" type="string"> 
                 <doc>uuid de la gamelle.</doc>
             </member>
             <member name="weight" type="float32"> 
@@ -17,7 +17,7 @@
     <module name="qeo::animall::balance">
         <struct name="NewWeight" behavior="event">
             <doc>Change de poid de la gamelle</doc>  
-            <member name="from" type="string"> 
+            <member name="uuid" type="string"> 
                 <doc>uuid de la gamelle.</doc>
             </member>
             <member name="weight" type="float32"> 

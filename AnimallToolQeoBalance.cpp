@@ -18,7 +18,7 @@ bool Balance::publishNewWeight() {
     // malloc à l'ancienne car structure c
     this->msg = (qeo_animall_balance_NewWeight_t*) malloc(sizeof (qeo_animall_balance_NewWeight_t));
 
-    this->msg->from = (char*) this->balance->getUuid().c_str();
+    this->msg->uuid = (char*) this->balance->getUuid().c_str();
     this->msg->weight = this->balance->getWeight();
     this->msg->timestamp = timestamp;
 
