@@ -1,5 +1,4 @@
 
-#include <sstream>
 
 #include "AnimallToolCmd.hpp"
 #include "AnimallObjectGamelle.hpp"

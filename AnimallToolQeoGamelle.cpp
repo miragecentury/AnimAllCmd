@@ -15,7 +15,7 @@ bool Gamelle::publishNewWeight() {
     qeo_retcode_t retC;
     // malloc à l'ancienne car structure c
     this->msg = (qeo_animall_gamelle_NewWeight_t*) malloc(sizeof (qeo_animall_gamelle_NewWeight_t));
-
+    timestamp = (int) time(NULL);
     this->msg->uuid = (char*) this->gamelle->getUuid().c_str();
     this->msg->weight = this->gamelle->getWeight();
     this->msg->timestamp = timestamp;

@@ -37,6 +37,8 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 OBJECTFILES= \
 	${OBJECTDIR}/_ext/1617827895/AnimallObjectBalance.o \
 	${OBJECTDIR}/_ext/1617827895/AnimallObjectGamelle.o \
+	${OBJECTDIR}/_ext/1617827895/AnimallToolApiBalance.o \
+	${OBJECTDIR}/_ext/1617827895/AnimallToolApiGamelle.o \
 	${OBJECTDIR}/_ext/1617827895/AnimallToolCmd.o \
 	${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBalance.o \
 	${OBJECTDIR}/_ext/1617827895/AnimallToolQeoGamelle.o \
@@ -78,6 +80,16 @@ ${OBJECTDIR}/_ext/1617827895/AnimallObjectGamelle.o: /home/zeus/NetBeansProjects
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
 	${RM} $@.d
 	$(COMPILE.cc) -g -s -I/home/zeus/Documents/QeoSDK-0.15.0/c/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallObjectGamelle.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectGamelle.cpp
+
+${OBJECTDIR}/_ext/1617827895/AnimallToolApiBalance.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolApiBalance.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
+	${RM} $@.d
+	$(COMPILE.cc) -g -s -I/home/zeus/Documents/QeoSDK-0.15.0/c/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallToolApiBalance.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolApiBalance.cpp
+
+${OBJECTDIR}/_ext/1617827895/AnimallToolApiGamelle.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolApiGamelle.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
+	${RM} $@.d
+	$(COMPILE.cc) -g -s -I/home/zeus/Documents/QeoSDK-0.15.0/c/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallToolApiGamelle.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolApiGamelle.cpp
 
 ${OBJECTDIR}/_ext/1617827895/AnimallToolCmd.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolCmd.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895

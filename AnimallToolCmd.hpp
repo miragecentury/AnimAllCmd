@@ -4,7 +4,7 @@
  *
  * Created on 18 novembre 2013, 13:09
  */
-
+#include <sstream>
 #include <iostream>
 #include <string>
 #include <ostream>

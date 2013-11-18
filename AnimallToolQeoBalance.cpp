@@ -14,7 +14,7 @@ bool Balance::publishNewWeight() {
     int32_t timestamp = 0;
     qeo_retcode_t retC;
     bool rt = false;
-    ;
+    timestamp = (int) time(NULL);
     // malloc à l'ancienne car structure c
     this->msg = (qeo_animall_balance_NewWeight_t*) malloc(sizeof (qeo_animall_balance_NewWeight_t));
 
