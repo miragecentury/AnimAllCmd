@@ -36,11 +36,13 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/_ext/1617827895/AnimallObjectBalance.o \
+	${OBJECTDIR}/_ext/1617827895/AnimallObjectBridge.o \
 	${OBJECTDIR}/_ext/1617827895/AnimallObjectGamelle.o \
 	${OBJECTDIR}/_ext/1617827895/AnimallToolApiBalance.o \
 	${OBJECTDIR}/_ext/1617827895/AnimallToolApiGamelle.o \
 	${OBJECTDIR}/_ext/1617827895/AnimallToolCmd.o \
 	${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBalance.o \
+	${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBridge.o \
 	${OBJECTDIR}/_ext/1617827895/AnimallToolQeoGamelle.o \
 	${OBJECTDIR}/_ext/1617827895/AnimallToolQeoLogger.o \
 	${OBJECTDIR}/_ext/1617827895/QeoAnimalEventMessage.o \
@@ -76,6 +78,11 @@ ${OBJECTDIR}/_ext/1617827895/AnimallObjectBalance.o: /home/zeus/NetBeansProjects
 	${RM} $@.d
 	$(COMPILE.cc) -g -s -I/home/zeus/Documents/QeoSDK-0.15.0/c/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallObjectBalance.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectBalance.cpp
 
+${OBJECTDIR}/_ext/1617827895/AnimallObjectBridge.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectBridge.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
+	${RM} $@.d
+	$(COMPILE.cc) -g -s -I/home/zeus/Documents/QeoSDK-0.15.0/c/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallObjectBridge.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectBridge.cpp
+
 ${OBJECTDIR}/_ext/1617827895/AnimallObjectGamelle.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectGamelle.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
 	${RM} $@.d
@@ -100,6 +107,11 @@ ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBalance.o: /home/zeus/NetBeansProject
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
 	${RM} $@.d
 	$(COMPILE.cc) -g -s -I/home/zeus/Documents/QeoSDK-0.15.0/c/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBalance.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBalance.cpp
+
+${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBridge.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBridge.cpp 
+	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
+	${RM} $@.d
+	$(COMPILE.cc) -g -s -I/home/zeus/Documents/QeoSDK-0.15.0/c/include -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBridge.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBridge.cpp
 
 ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoGamelle.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoGamelle.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895

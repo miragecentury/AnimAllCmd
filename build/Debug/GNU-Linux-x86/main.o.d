@@ -8,8 +8,10 @@ build/Debug/GNU-Linux-x86/main.o: main.cpp AnimallObjectGamelle.hpp \
  /home/zeus/Documents/QeoSDK-0.15.0/c/include/dds/dds_types.h \
  /home/zeus/Documents/QeoSDK-0.15.0/c/include/dds/dds_seq.h \
  /home/zeus/Documents/QeoSDK-0.15.0/c/include/dds/dds_error.h \
- QeoAnimalEventMessage.h AnimallToolCmd.hpp AnimallToolApiBalance.hpp \
- AnimallToolApiGamelle.hpp
+ QeoAnimalEventMessage.h AnimallToolCmd.hpp AnimallObjectBalance.hpp \
+ AnimallObjectBridge.hpp AnimallToolQeoBridge.hpp \
+ AnimallToolApiBalance.hpp AnimallToolApiGamelle.hpp \
+ AnimallToolQeoBalance.hpp AnimallToolQeoLogger.hpp
 
 AnimallObjectGamelle.hpp:
 
@@ -35,6 +37,16 @@ QeoAnimalEventMessage.h:
 
 AnimallToolCmd.hpp:
 
+AnimallObjectBalance.hpp:
+
+AnimallObjectBridge.hpp:
+
+AnimallToolQeoBridge.hpp:
+
 AnimallToolApiBalance.hpp:
 
 AnimallToolApiGamelle.hpp:
+
+AnimallToolQeoBalance.hpp:
+
+AnimallToolQeoLogger.hpp:

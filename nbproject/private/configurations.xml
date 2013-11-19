@@ -31,8 +31,10 @@
           <runcommandpicklistitem>"${OUTPUT_PATH}" BalanceUpdate</runcommandpicklistitem>
           <runcommandpicklistitem>"${OUTPUT_PATH}" BalanceUpdate help</runcommandpicklistitem>
           <runcommandpicklistitem>"${OUTPUT_PATH}" BalanceUpdate qdqsqdqs-4564qsd-qd546 4564.45</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" Dev</runcommandpicklistitem>
+          <runcommandpicklistitem>"${OUTPUT_PATH}" Bridge</runcommandpicklistitem>
         </runcommandpicklist>
-        <runcommand>"${OUTPUT_PATH}" BalanceUpdate qdqsqdqs-4564qsd-qd546 4564.45</runcommand>
+        <runcommand>"${OUTPUT_PATH}" Bridge</runcommand>
         <rundir></rundir>
         <buildfirst>true</buildfirst>
         <terminal-type>0</terminal-type>

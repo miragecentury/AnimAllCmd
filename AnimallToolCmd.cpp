@@ -1,11 +1,6 @@
 
 
 #include "AnimallToolCmd.hpp"
-#include "AnimallObjectGamelle.hpp"
-#include "AnimallObjectBalance.hpp"
-#include "AnimallToolQeoGamelle.hpp"
-#include "AnimallToolQeoBalance.hpp"
-#include "AnimallToolQeoLogger.hpp"
 
 using namespace Animall::Tool;
 
@@ -27,6 +22,10 @@ void Cmd::dispatchCmd(int argc, char** argv) {
     std::string cmdBalenceWeightUpdate = "BalanceUpdate";
     std::string cmdGamelleWeightUpdate = "GamelleUpdate";
     std::string cmdLogger = "Logger";
+    std::string cmdDev = "Dev";
+    std::string cmdBridge = "Bridge";
+    std::string cmdNao = "Nao";
+
     bool exec = false;
     if (exec == false && !cmdHelp.compare(argv[1])) {
         this->printHelp();
@@ -42,6 +41,14 @@ void Cmd::dispatchCmd(int argc, char** argv) {
     }
     if (exec == false && !cmdLogger.compare(argv[1])) {
         this->LoggerCmd(argc, argv);
+        exec = true;
+    }
+    if (exec == false && !cmdBridge.compare(argv[1])) {
+        this->BridgeDaemonCmd(argc, argv);
+        exec = true;
+    }
+    if (exec == false && !cmdDev.compare(argv[1])) {
+        this->DevCmd(argc, argv);
         exec = true;
     }
 
@@ -218,3 +225,38 @@ void Cmd::LoggerHelp() {
     std::cout << "\tLogger" << " " << "scope [sous_scope]" << " : " << "Log les events dans le scope" << std::endl;
     std::cout << "\t\t - " << "scope" << "\t\t: " << "" << "\texemple: " << "all|Gamelle|Balance" << std::endl;
 }
+
+/**/
+
+void Cmd::DevCmd(int argc, char** argv) {
+    this->Dev(argc, argv);
+}
+
+void Cmd::Dev(int argc, char** argv) {
+    Animall::Tool::Api::Balance::updateWeight(std::string(""), std::string(""), 562.3, (int) time(NULL));
+    Animall::Tool::Api::Gamelle::updateWeight(std::string(""), std::string(""), 562.3, (int) time(NULL));
+}
+
+void Cmd::DevHelp() {
+
+}
+
+/**/
+
+void Cmd::BridgeDaemonCmd(int argc, char** argv) {
+    this->BridgeDaemon(std::string(""));
+}
+
+void Cmd::BridgeDaemon(std::string urlBase) {
+    if (!urlBase.compare("")) {
+        urlBase = "http://guardgamelle.local";
+    }
+    Animall::Object::Bridge* br = new Animall::Object::Bridge(urlBase);
+    br->~Bridge();
+}
+
+void Cmd::BridgeDaemonHelp() {
+
+}
+
+/**/

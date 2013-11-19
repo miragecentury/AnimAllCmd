@@ -4,8 +4,15 @@
  *
  * Created on 18 novembre 2013, 20:17
  */
-
 #include <string>
+#include <iostream>
+#include <ios>
+#include <iosfwd>
+#include <sstream>
+
+extern "C" {
+#include <stdlib.h>
+}
 
 #ifndef ANIMALLTOOLAPIGAMELLE_HPP
 #define	ANIMALLTOOLAPIGAMELLE_HPP

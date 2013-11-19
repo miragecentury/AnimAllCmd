@@ -9,6 +9,15 @@
 #include <string>
 #include <ostream>
 
+#include "AnimallObjectGamelle.hpp"
+#include "AnimallObjectBalance.hpp"
+#include "AnimallObjectBridge.hpp"
+#include "AnimallToolQeoGamelle.hpp"
+#include "AnimallToolQeoBalance.hpp"
+#include "AnimallToolQeoLogger.hpp"
+#include "AnimallToolApiBalance.hpp"
+#include "AnimallToolApiGamelle.hpp"
+
 #ifndef ANIMALL_HPP
 #define	ANIMALL_HPP
 
@@ -92,6 +101,22 @@ namespace Animall {
             void GamelleMangerHelp();
 
             /**/
+
+            void BridgeDaemonCmd(int argc, char** argv);
+
+            void BridgeDaemon(std::string urlBase);
+
+            void BridgeDaemonHelp();
+
+            /**/
+
+            void DevCmd(int argc, char** argv);
+
+            void Dev(int argc, char** argv);
+
+            void DevHelp();
+
+            /***/
         };
     }
 }
