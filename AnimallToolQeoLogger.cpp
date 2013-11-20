@@ -43,7 +43,7 @@ bool Logger::addAll() {
 }
 
 /**/
-static void QeoBalanceWeightUpdateFct(const qeo_event_reader_t *reader, const void *data, uintptr_t userdata) {
+void Logger::QeoBalanceWeightUpdateFct(const qeo_event_reader_t *reader, const void *data, uintptr_t userdata) {
     qeo_animall_balance_NewWeight_t* msg = (qeo_animall_balance_NewWeight_t*) data;
     std::cout << "*****" << std::endl;
     std::cout << "*\t" << "BalanceWeightUpdate:" << std::endl;
@@ -53,7 +53,7 @@ static void QeoBalanceWeightUpdateFct(const qeo_event_reader_t *reader, const vo
     std::cout << "*****" << std::endl;
 }
 
-qeo_event_reader_listener_t Logger::BalanceWeightUpdateLst = {.on_data = QeoBalanceWeightUpdateFct};
+qeo_event_reader_listener_t Logger::BalanceWeightUpdateLst = {.on_data = Logger::QeoBalanceWeightUpdateFct};
 
 bool Logger::addBalance() {
     this->addBalanceWeightUpdate();
@@ -71,7 +71,7 @@ bool Logger::addBalanceWeightUpdate() {
 }
 
 /**/
-static void QeoGamelleWeightUpdateFct(const qeo_event_reader_t *reader, const void *data, uintptr_t userdata) {
+void Logger::QeoGamelleWeightUpdateFct(const qeo_event_reader_t *reader, const void *data, uintptr_t userdata) {
     qeo_animall_gamelle_NewWeight_t* msg = (qeo_animall_gamelle_NewWeight_t*) data;
     std::cout << "*****" << std::endl;
     std::cout << "*\t" << "GamelleWeightUpdate:" << std::endl;
@@ -81,7 +81,7 @@ static void QeoGamelleWeightUpdateFct(const qeo_event_reader_t *reader, const vo
     std::cout << "*****" << std::endl;
 }
 
-qeo_event_reader_listener_t Logger::GamelleWeightUpdateLst = {.on_data = QeoGamelleWeightUpdateFct};
+qeo_event_reader_listener_t Logger::GamelleWeightUpdateLst = {.on_data = Logger::QeoGamelleWeightUpdateFct};
 
 bool Logger::addGamelle() {
     this->addGamelleWeightUpdate();

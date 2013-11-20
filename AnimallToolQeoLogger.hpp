@@ -31,10 +31,12 @@ namespace Animall {
                 bool addGamelle();
                 bool addGamelleWeightUpdate();
                 static qeo_event_reader_listener_t GamelleWeightUpdateLst;
+                static void QeoGamelleWeightUpdateFct(const qeo_event_reader_t *reader, const void *data, uintptr_t userdata);
                 /**/
                 bool addBalance();
                 bool addBalanceWeightUpdate();
                 static qeo_event_reader_listener_t BalanceWeightUpdateLst;
+                static void QeoBalanceWeightUpdateFct(const qeo_event_reader_t *reader, const void *data, uintptr_t userdata);
                 /**/
             private:
                 bool err;
