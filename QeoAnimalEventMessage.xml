@@ -112,6 +112,12 @@
             </member>
         </struct>
     </module>
+    <module name="qeo::animall::nao">
+        <struct name="Say">
+            <member name="text" type="string">
+            </member>
+        </struct>
+    </module>
 </types> 
 
 

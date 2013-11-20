@@ -158,6 +158,11 @@ typedef struct {
 } qeo_animall_tv_AfficherPageWeb_t;
 extern const DDS_TypeSupport_meta qeo_animall_tv_AfficherPageWeb_type[];
 
+typedef struct {
+    char * text;
+} qeo_animall_nao_Say_t;
+extern const DDS_TypeSupport_meta qeo_animall_nao_Say_type[];
+
 
 #endif /* QDM_QEOANIMALEVENTMESSAGE_H_ */
 

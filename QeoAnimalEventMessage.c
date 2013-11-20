@@ -63,3 +63,8 @@ const DDS_TypeSupport_meta qeo_animall_tv_AfficherPageWeb_type[] = {
     { .tc = CDR_TYPECODE_CSTRING, .name = "url", .flags = TSMFLAG_DYNAMIC, .offset = offsetof(qeo_animall_tv_AfficherPageWeb_t, url), .size = 0 },  
     { .tc = CDR_TYPECODE_CSTRING, .name = "dataPost", .flags = TSMFLAG_DYNAMIC, .offset = offsetof(qeo_animall_tv_AfficherPageWeb_t, dataPost), .size = 0 },  
 };
+
+const DDS_TypeSupport_meta qeo_animall_nao_Say_type[] = {
+    { .tc = CDR_TYPECODE_STRUCT, .name = "qeo.animall.nao.Say", .flags = TSMFLAG_DYNAMIC|TSMFLAG_GENID|TSMFLAG_MUTABLE, .nelem = 1, .size = sizeof(qeo_animall_nao_Say_t) },  
+    { .tc = CDR_TYPECODE_CSTRING, .name = "text", .flags = TSMFLAG_DYNAMIC, .offset = offsetof(qeo_animall_nao_Say_t, text), .size = 0 },  
+};
