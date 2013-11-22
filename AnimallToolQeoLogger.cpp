@@ -27,14 +27,6 @@ Logger::~Logger() {
     }
 }
 
-void Logger::waitExit() {
-    std::string cmd;
-    std::string cmdExit = "exit";
-    do {
-        std::cin >> cmd;
-    } while (cmdExit.compare(cmd));
-}
-
 /**/
 
 bool Logger::addAll() {
@@ -98,5 +90,11 @@ bool Logger::addGamelleWeightUpdate() {
     }
 }
 
-
+void Logger::waitExit() {
+    std::string cmdExit = "exit";
+    std::string cmd = "";
+    do {
+        std::cin >> cmd;
+    } while (cmdExit.compare(cmd));
+}
 
