@@ -75,63 +75,63 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/senderanimallcmd: ${OBJECTFILES}
 
 ${OBJECTDIR}/_ext/1617827895/AnimallObjectBalance.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectBalance.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallObjectBalance.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectBalance.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1617827895/AnimallObjectBalance.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectBalance.cpp
 
 ${OBJECTDIR}/_ext/1617827895/AnimallObjectBridge.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectBridge.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallObjectBridge.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectBridge.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1617827895/AnimallObjectBridge.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectBridge.cpp
 
 ${OBJECTDIR}/_ext/1617827895/AnimallObjectGamelle.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectGamelle.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallObjectGamelle.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectGamelle.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1617827895/AnimallObjectGamelle.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallObjectGamelle.cpp
 
 ${OBJECTDIR}/_ext/1617827895/AnimallToolApiBalance.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolApiBalance.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallToolApiBalance.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolApiBalance.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1617827895/AnimallToolApiBalance.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolApiBalance.cpp
 
 ${OBJECTDIR}/_ext/1617827895/AnimallToolApiGamelle.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolApiGamelle.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallToolApiGamelle.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolApiGamelle.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1617827895/AnimallToolApiGamelle.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolApiGamelle.cpp
 
 ${OBJECTDIR}/_ext/1617827895/AnimallToolCmd.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolCmd.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallToolCmd.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolCmd.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1617827895/AnimallToolCmd.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolCmd.cpp
 
 ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBalance.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBalance.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBalance.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBalance.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBalance.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBalance.cpp
 
 ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBridge.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBridge.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBridge.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBridge.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoBridge.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoBridge.cpp
 
 ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoGamelle.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoGamelle.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoGamelle.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoGamelle.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoGamelle.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoGamelle.cpp
 
 ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoLogger.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoLogger.cpp 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoLogger.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoLogger.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1617827895/AnimallToolQeoLogger.o /home/zeus/NetBeansProjects/SenderAnimallCmd/AnimallToolQeoLogger.cpp
 
 ${OBJECTDIR}/_ext/1617827895/QeoAnimalEventMessage.o: /home/zeus/NetBeansProjects/SenderAnimallCmd/QeoAnimalEventMessage.c 
 	${MKDIR} -p ${OBJECTDIR}/_ext/1617827895
-	${RM} $@.d
-	$(COMPILE.c) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/_ext/1617827895/QeoAnimalEventMessage.o /home/zeus/NetBeansProjects/SenderAnimallCmd/QeoAnimalEventMessage.c
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/_ext/1617827895/QeoAnimalEventMessage.o /home/zeus/NetBeansProjects/SenderAnimallCmd/QeoAnimalEventMessage.c
 
 ${OBJECTDIR}/main.o: main.cpp 
 	${MKDIR} -p ${OBJECTDIR}
-	${RM} $@.d
-	$(COMPILE.cc) -O2 -MMD -MP -MF $@.d -o ${OBJECTDIR}/main.o main.cpp
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/main.o main.cpp
 
 # Subprojects
 .build-subprojects:

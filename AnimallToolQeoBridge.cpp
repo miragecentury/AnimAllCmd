@@ -15,7 +15,8 @@ Bridge::Bridge(std::string baseUrl) {
 
     this->BalanceWeightUpdateER = NULL;
     this->GamelleWeightUpdateER = NULL;
-
+    Bridge::BalanceWeightUpdateLst.on_data = (qeo_event_on_data_callback) Bridge::QeoBalanceWeightUpdateFct;
+    Bridge::GamelleWeightUpdateLst.on_data = (qeo_event_on_data_callback) Bridge::QeoGamelleWeightUpdateFct;
 }
 
 Bridge::~Bridge() {
@@ -40,7 +41,7 @@ void Bridge::QeoBalanceWeightUpdateFct(const qeo_event_reader_t *reader, const v
     Animall::Tool::Api::Balance::updateWeight(Bridge::baseUrl, msg->uuid, msg->weight, msg->timestamp);
 }
 
-qeo_event_reader_listener_t Bridge::BalanceWeightUpdateLst = {.on_data = Bridge::QeoBalanceWeightUpdateFct};
+qeo_event_reader_listener_t Bridge::BalanceWeightUpdateLst;
 
 bool Bridge::addBalanceWeightUpdate() {
     if (this->err == false) {
@@ -62,7 +63,7 @@ void Bridge::QeoGamelleWeightUpdateFct(const qeo_event_reader_t *reader, const v
     Animall::Tool::Api::Gamelle::updateWeight(Bridge::baseUrl, msg->uuid, msg->weight, msg->timestamp);
 }
 
-qeo_event_reader_listener_t Bridge::GamelleWeightUpdateLst = {.on_data = Bridge::QeoGamelleWeightUpdateFct};
+qeo_event_reader_listener_t Bridge::GamelleWeightUpdateLst;
 
 bool Bridge::addGamelleWeightUpdate() {
     if (this->err == false) {
